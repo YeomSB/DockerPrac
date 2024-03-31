@@ -21,11 +21,11 @@ jobs:
           java-version: '17'
           distribution: "adopt"
           
-      - name: Make application.properties
+      - name: Make application.yml
         run: |
           cd ./src/main/resources
-          touch ./application.properties
-          echo "${{ secrets.APPLICATION }}" > ./application.properties
+          touch ./application.yml
+          echo "${{ secrets.APPLICATIONYML }}" > ./application.yml
         shell: bash
         
       - name: Build with Gradle

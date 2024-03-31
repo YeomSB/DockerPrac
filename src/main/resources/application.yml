@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:mysql://database-1.ct4cqg6q4lkm.ap-northeast-2.rds.amazonaws.com:3306/dockertest
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: admin
+    password: duatmdqja09
+  jpa:
+    hibernate:
+      ddl-auto: update

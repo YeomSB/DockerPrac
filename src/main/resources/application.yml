@@ -7,3 +7,17 @@ spring:
   jpa:
     hibernate:
       ddl-auto: create
+
+
+cloud:
+  aws:
+    s3:
+      bucket: ${{ secrets.S3BUCKET }}
+    credentials:
+      access-key: ${{ secrets.S3KEY }}
+      secret-key: ${{ secrets.S3SECRETKEY }}
+    region:
+      static: ${{ secrets.S3REGION }}
+      auto: false
+    stack:
+      auto: false

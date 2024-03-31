@@ -17,6 +17,7 @@ public class MainEntity {
     private Long id;
 
     private String name;
+    private String sex;
 
 
 }

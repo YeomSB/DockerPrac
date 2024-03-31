@@ -24,7 +24,7 @@ public class MainController {
         return "Save "+mainRequestDTO.getName();
     }
 
-    @GetMapping("/get")
+    @GetMapping("/get/{id}")
     public String getTest(@PathVariable Long id){
         return mainService.getName(id);
     }

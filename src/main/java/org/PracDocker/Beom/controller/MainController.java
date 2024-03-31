@@ -20,14 +20,14 @@ public class MainController {
         return "helkdsah";
     }
 
-    @PostMapping("/save")
-    public String saveTest() {
-        MainEntity mainEntity = MainEntity.builder()
-                .name("SexMachines")
-                .build();
-        mainService.save(mainEntity);
-        return "Save SexMachine";
-    }
+//    @PostMapping("/save")
+//    public String saveTest() {
+//        MainEntity mainEntity = MainEntity.builder()
+//                .name("SexMachines")
+//                .build();
+//        mainService.save(mainEntity);
+//        return "Save SexMachine";
+//    }
 
     @GetMapping("/get")
     public String getTest(){

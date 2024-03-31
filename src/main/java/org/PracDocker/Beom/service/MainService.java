@@ -16,6 +16,6 @@ public class MainService {
         mainRepository.save(mainEntity);
     }
     public String getName() {
-        return mainRepository.findById(1L).orElseThrow().getName();
+        return mainRepository.findByName("man").orElseThrow().getName();
     }
 }

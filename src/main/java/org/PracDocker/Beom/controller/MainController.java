@@ -1,6 +1,5 @@
 package org.PracDocker.Beom.controller;
 
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.PracDocker.Beom.entity.MainEntity;
 import org.PracDocker.Beom.service.MainService;
@@ -22,7 +21,7 @@ public class MainController {
     @PostMapping("/save")
     public String saveTest() {
         MainEntity mainEntity = MainEntity.builder()
-                .name("SexMachine")
+                .name("SexMachines")
                 .build();
         mainService.save(mainEntity);
         return "Save SexMachine";
